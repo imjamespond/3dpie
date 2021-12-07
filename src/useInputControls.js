@@ -176,7 +176,7 @@ const useInputControls = () => {
             },
             innerRadius: {
               value: 2,
-              min: 0,
+              min: 90,
               type: LevaInputs.NUMBER,
               max: 100,
               step: 1,

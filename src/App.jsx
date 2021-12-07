@@ -7,6 +7,8 @@ import Pie from './Pie'
 import Turntable from './Turntable'
 import useInputControls, { pieDataFromControls } from './useInputControls'
 
+import {SvgPie} from './SvgPie'
+
 function App() {
   const orbitControlsRef = React.useRef()
   const [controlValues, set] = useInputControls()
@@ -115,9 +117,9 @@ function App() {
         )}
       </Canvas>
       {/* Optionally render the 2D version */}
-      {/* <div className="absolute top-0 left-0">
+      <div className="absolute top-0 left-0">
         <SvgPie data={data} />
-      </div> */}
+      </div>
       <div
         className="absolute w-full mx-auto text-3xl font-black text-center poxinter-events-none"
         style={{
